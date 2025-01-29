@@ -10,13 +10,12 @@
 
 - Asymptotic Notations are the mathematical tools used to describe the running time of an algorithm in terms of input size.
 
-
 ### Type of Asymptotic Notation
 
 - There are three notations for performing runtime analysis of an algorithm
-    - Omega (Ω) Notation
-    - Big O (O) Notation
-    - Theta (ϴ) Notation
+  - Omega (Ω) Notation
+  - Big O (O) Notation
+  - Theta (ϴ) Notation
 
 ## Omega (Ω) Notation
 
@@ -24,18 +23,45 @@
 - Lower bound means for any given input this notation determines best amount of time an algorithm can take to complete.
 
 - For example:
-    - If we say certain algorithm takes 100 secs as best amount of time. So, 100 secs will be lower bound of that algorithm. The algorithm can take more than 100 secs but it will not take less than 100 secs.
+  - If we say certain algorithm takes 100 secs as best amount of time. So, 100 secs will be lower bound of that algorithm. The algorithm can take more than 100 secs but it will not take less than 100 secs.
 
 ## Big O (O) Notation
 
 - It is the formal way to express the upper bound of an algorithm's running time.
 - Upper bound means for any given input this notation determines longest amount of time an algorithm can take to complete.
 - For example:
-    - If we say certain algorithm takes 200 secs as longest amount of time. So, 100 secs will be upper bound of that algorithm. The algorithm can take less than 100 secs but it will not take more than 100 secs.
+  - If we say certain algorithm takes 200 secs as longest amount of time. So, 100 secs will be upper bound of that algorithm. The algorithm can take less than 100 secs but it will not take more than 100 secs.
 
 ## Theta (ϴ) Notation
 
 - It is the formal way to express both the upper and lower bound of an algorithm's running time.
 - By lower and upper bound means for any given input this notation determines average amount of time an algorithm can take to complete.
 - For example:
-    - If we run certain algorithm and it takes 100 secs for the first run, 120 sec for seconds run, 110 for third run and so on. So, theta notations gives average of running time of that algorithm. 
+  - If we run certain algorithm and it takes 100 secs for the first run, 120 sec for seconds run, 110 for third run and so on. So, theta notations gives average of running time of that algorithm.
+
+## Analysis Of Time Complexity (Big O Notation)
+
+### Rules Of Big O Notation
+
+- It's a single processor
+- It performs Sequential Execution of statements
+- Assignments operation takes 1 unit of time
+- Return statement takes in 1 unit of time
+- Arithmetical Operation takes 1 unit of time
+- Logical operation takes 1 unit of time
+- Other small/single operations takes 1 unit of time
+- Drop lower order terms
+
+```
+T = n2 + 3n + 1 ==> O(n2)
+```
+
+- Drop constant multiplier
+
+```
+T = 3n2 + 6n + 1 ==> O(n2)
+```
+
+Constant Algorithm = O(1)
+Linear Algorithm = O(n)
+Polynomial Algorithm = O(n^n*n)
