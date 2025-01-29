@@ -7,3 +7,5 @@
 - Using asymptotic analysis we dpn't measure actual running time of algorithm.
 
 - It helps in determining how time and space taken by algorithm increases with input size.
+
+- Asymptotic Notations are the mathematical tools used to describe the running time of an algorithm in terms of input size.
