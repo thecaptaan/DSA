@@ -4,7 +4,7 @@ public class SumOfN {
         SumOfN demo = new SumOfN();
         System.out.println(demo.findSumMath(99999999));
         // System.out.println(demo.findSumLoop(99999999));
-        System.out.println("Time Taken: " + (System.currentTimeMillis() - startTime)+ " millis");
+        System.out.println("Time Taken: " + (System.currentTimeMillis() - startTime) + " millis");
     }
 
     public int findSumMath(int n) {
